@@ -1,0 +1,18 @@
+//Colores
+$primary: #ffc107;
+$secondary: #1E243B;
+
+//Temas
+$theme-colors:(
+    "primary": $primary,
+    "secondary": $secondary
+);
+//NAV
+$nav-link-color: #ffffff7e;
+$nav-link-font-weight: 600;
+$nav-link-hover-color: #ffc100;
+
+//General<body>
+$body-color: white;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

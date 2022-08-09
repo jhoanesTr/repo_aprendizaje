@@ -1,0 +1,12 @@
+.nav-link {
+    color: #ffffff7e;
+    font-weight: 600;
+}
+.nav-link:hover{
+    color: #ffc107;
+}
+main{
+    background-image: url("img/cubes-gf93b38258_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,41 @@
+$primary: rgba(86,148,219,.6);
+$secondary: #f7d559;
+$white: #ffffff;
+$light: #C1D8F0;
+$gray: #EFEFEF;
+$black: #000000FF;
+
+$theme-colors:(
+    "primary": $primary,
+    "secondary": $secondary,
+    "light": $light,
+    "gray": $gray,
+);
+
+//Padding y margin
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 6,
+    7: $spacer * 12
+);
+
+//Link
+//$link-decoration: null;
+$nav-link-color: $white;
+$nav-link-hover-color: $secondary;
+
+//Tab
+$nav-tabs-border-color:             $white;
+$nav-tabs-border-radius:            0rem;
+$nav-tabs-link-active-color:        $black, ;
+$nav-tabs-link-active-bg:           $primary;
+$nav-tabs-link-active-border-color: $white;
+
+
+@import "../bootstrap/scss/bootstrap";

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+    <!--Dirigimos a nuestro documento PHP-->
+        <!--Escogemos el metodo "post" de PHP-->
+    <form action="./src/php/form.php" method="post">
+
+        <fieldset><!--Recuadro de datos-->
+            <legend>Registrate!</legend><!--Titulo-->
+            <ul>
+            <div class="inline">
+                <li><h6>Nombre:</h6><!--!ACCESIBILIDAD-->
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" autofocus maxlength="30"></li>
+
+                <li><h6>Apellidos:</h6><!--!ACCESIBILIDAD-->
+                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" maxlength="30"></li>
+            </div>
+
+                <li><h6>Nombre de usuario:</h6><!--!ACCESIBILIDAD-->
+                <input type="text" name="usuario" id="usuario" maxlength="20"></li>
+
+                <li><h6>Email:</h6><!--!ACCESIBILIDAD-->
+                <input type="email" name="email" id="email" placeholder="@example.com"></li>
+
+            <div class="inline">
+                <li><h6>Contraseña</h6><!--!ACCESIBILIDAD-->
+                <input type="password" name="contraseña" id="contraseña" placeholder="xxxxxx"></li>
+
+                <li><h6>Repetir contraseña:</h6><!--!ACCESIBILIDAD-->
+                <input type="password" name="contraseñar" id="contraseñar" placeholder="xxxxxx"></li><!--contraseñar-->
+            </div>
+
+                <li><h6>Telefono:</h6><!--!ACCESIBILIDAD-->
+                <input type="tel" name="telefono" id="telefono" value="+34"maxlength="12"></li>
+            </ul>
+
+            <div class="centrar">
+                <input type="submit" value="Registrarme" class="centrar" id="enviar"><!--Boton Enviar-->
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>
+<!--TODO Voy a usar el "h6" para los titulos de los campos-->

@@ -1,0 +1,32 @@
+//Colores
+$primary: #ffc107;
+$secondary: #1E243B;
+$yellow: #FFE711;
+$white: #F7FFF8;
+
+
+//Temas
+$theme-colors:(
+    "primary": $primary,
+    "secondary": $secondary,
+    "yellow": $yellow,
+    "white": $white
+);
+
+//NAV
+$nav-link-color: #ffffff7e;
+$nav-link-font-weight: 600;
+$nav-link-hover-color: #ffc100;
+
+//General<body>
+
+
+//FORM
+$form-label-color: $secondary;
+$form-label-font-weight: bolder;
+$form-label-margin-bottom: 1;
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

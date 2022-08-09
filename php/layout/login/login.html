@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./src/css/login.css">
+</head>
+<body>
+    <!--TODO Desplegamos GRID-->
+    <div class="grid">
+     <!--Dirigimos a nuestro documento PHP-->
+        <!--Escogemos el metodo "post" de PHP-->
+    <form action="./src/php/formlogin.php" method="post">
+        <fieldset>
+            <legend>Login</legend>
+            
+            <div id="fila1">
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" name="usuario" id="usuario" placeholder="user123" autofocus maxlength="15">
+            </div>
+
+            <div id="fila2">
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" name="contraseña" id="contraseña" placeholder="&bull; &bull; &bull; &bull;" maxlength="15">
+            </div>
+
+            <input type="submit" value="Entrar" id="entrar">
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>

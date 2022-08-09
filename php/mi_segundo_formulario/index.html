@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!--Dirigimos a nuestro documento PHP-->
+        <!--Escogemos el metodo "post" de PHP-->
+    <form action="./php/form.php" method="post">
+
+        <fieldset><!--Recuadro de datos-->
+            <legend>Registrate</legend><!--Titulo-->
+            <ul>
+                <li><h6>Nombre</h6>
+                <input type="text" name="nombre" id="" placeholder="Nombre" autofocus autocapitalize="words"></li>
+
+                <li><h6>Apellidos</h6>
+                <input type="text" name="apellidos" id="" placeholder="Apellidos"></li>
+
+                <li><h6>Nombre de usuario:</h6>
+                <input type="text" name="usuario" id=""></li>
+
+                <li><h6>Email:</h6>
+                <input type="email" name="email" id="" placeholder="@example.com"></li>
+
+                <li><h6>Contraseña</h6>
+                <input type="password" name="contraseña" id="" placeholder="xxxxxx"></li>
+
+                <li><h6>Repetir contraseña</h6>
+                <input type="password" name="contraseña" id="" placeholder="xxxxxx"></li>
+
+                <li><h6>Telefono</h6>
+                <input type="tel" name="telefono" id="" value="+34"></li>
+            </ul>
+        <input type="submit" value="Enviar"><!--Boton Enviar-->
+        </fieldset>
+    </form>
+
+</body>
+</html>
+<!--TODO Voy a usar el "h6" para los titulos de los campos-->

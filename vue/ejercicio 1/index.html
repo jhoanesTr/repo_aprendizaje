@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba 1</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{ message }}
+    </div>
+
+    <div id="app2">
+        <span v-bind:title="message">
+            Mueva el mouse sobre mí durante unos segundos
+            para ver mi título enlazado dinámicamente.
+        </span>
+    </div>
+
+<!--Condicionales y bucles-->
+    <!--Seen: TRUE|FALSE-->
+    <div id="app3">
+        <span v-if="seen">Ahora me ves</span>
+    </div>
+
+    <!--for-->
+    <div id="app4">
+        <ol>
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+        </ol>
+    </div>
+
+<!--Interacciones del usuario-->
+    <div id="app5">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Mensaje invertido</button>
+    </div>
+
+    <div id="app6">
+        <p>{{ message }}</p>
+        <input v-model="message">
+      </div>
+
+<!--Componentes-->
+<div id="app7">
+    <ol>
+        <todo-item
+            v-for="item in groceryList"
+            v-bind:todo="item"
+            v-bind:key="item.id">
+        </todo-item>
+    </ol>
+</div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

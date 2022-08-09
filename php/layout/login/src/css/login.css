@@ -1,0 +1,176 @@
+@font-face {
+    font-family: DejaVuSansCBold;
+    src: url(../fonts/DejaVuSansMono-Bold.ttf);
+}
+@font-face {
+    font-family: DejavuSans;
+    src: url(../fonts/DejaVuSansMono.ttf);
+}
+/*!Para telefonos*/
+@media screen and (max-width: 600px){
+html, body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;/*Para que ocupe toda la pantalla*/
+    width: 100%;/*Para que ocupe toda la pantalla*/
+}
+
+    .grid{
+        display: grid;
+        grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+        grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+        height: 99.7%;/*Para que ocupe toda la pantalla*/
+    }
+    form{
+        grid-column: x1 / x2;
+        grid-row: y1 / y2;
+        background-color: rgba(80, 80, 218, 0.534);
+        border-radius: 5px;
+    }
+    fieldset{
+        border: 0;
+        margin-top: 8px;
+    }
+    legend{
+        font-family: DejaVuSansCBold;
+        font-size: 23pt;
+    }
+        label{
+            font-family: DejaVuSans;
+            font-size: 11pt;
+            display: block;
+            margin-bottom: 2%;
+        }
+        input{
+           border-radius: 5px; 
+           height: 20px;
+           max-width: 155px;
+        }
+    #fila1{
+        margin-bottom: 18px;/*1vh = 1% de la altura de la ventana*/
+    }
+    #fila2{
+        margin-bottom: 10px;/*1vh = 1% de la altura de la ventana*/
+    }
+}
+/*!Para Tablet*/
+@media screen and (min-width: 601px){
+html, body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;/*Para que ocupe toda la pantalla*/
+    width: 100%;/*Para que ocupe toda la pantalla*/
+}
+
+    .grid{
+        display: grid;
+        grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+        grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+        height: 99.7%;/*Para que ocupe toda la pantalla*/
+    }
+    form{
+        grid-column: x1 / x2;
+        grid-row: y1 / y2;
+        background-color: rgba(80, 80, 218, 0.534);
+        border-radius: 5px;
+        min-width: 225px;
+    }
+    fieldset{
+        border: 0;
+        margin-top: 10px;
+    }
+    legend{
+        font-family: DejaVuSansCBold;
+        font-size: 25pt;
+    }
+        label{
+            font-family: DejaVuSans;
+            font-size: 13pt;
+            display: block;
+            margin-top: 1%;
+            margin-bottom: 2%;
+        }
+        input{
+           border-radius: 5px; 
+           height: 20px;
+           width: 65%;
+           min-width: 180px;
+           max-width: 182px;
+        }
+    #fila1{
+        margin-bottom: 18px;/*1vh = 1% de la altura de la ventana*/
+    }
+    #fila2{
+        margin-bottom: 10px;/*1vh = 1% de la altura de la ventana*/
+    }
+    #entrar{
+        text-align: center;
+        width: 10vh;
+        min-width: 52px;
+    }
+}
+
+/*!Para PC*/
+@media screen and (min-width:1026px){
+html, body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;/*Para que ocupe toda la pantalla*/
+    width: 100%;/*Para que ocupe toda la pantalla*/
+}
+
+    .grid{
+        display: grid;
+        grid-template-columns: [x0] 1fr [x1] 22% [x2] 1fr [x3];
+        grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+        height: 99.7%;/*Para que ocupe toda la pantalla*/
+    }
+    form{
+        grid-column: x1 / x2;
+        grid-row: y1 / y2;
+        background-color: rgba(80, 80, 218, 0.534);
+        border-radius: 5px;
+        min-width: 245px;
+    }
+    fieldset{
+        border: 0;
+        margin-top: 10px;
+    }
+    legend{
+        font-family: DejaVuSansCBold;
+        font-size: 27pt;
+    }
+        label{
+            font-family: DejaVuSans;
+            font-size: 15pt;
+            display: block;
+            margin-top: 1%;
+            margin-bottom: 2%;
+        }
+        input{
+           border-radius: 5px; 
+           height: 20px;
+           width: 65%;
+           min-width: 200px;
+        }
+    #fila1{
+        margin-bottom: 18px;/*1vh = 1% de la altura de la ventana*/
+    }
+    #fila2{
+        margin-bottom: 10px;/*1vh = 1% de la altura de la ventana*/
+    }
+    #entrar{
+        text-align: center;
+        width: 10vh;
+        min-width: 52px;
+    }
+}

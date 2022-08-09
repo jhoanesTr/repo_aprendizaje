@@ -1,0 +1,17 @@
+{
+  "name": "vdservice9n",
+  "version": "1.0.0",
+  "description": "Mi página con node, actualizando node",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": "Jhoanes",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.2",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.1"
+  }
+}

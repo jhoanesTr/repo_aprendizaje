@@ -1,0 +1,8 @@
+C:\laragon\etc\apps
+
+https://files.phpmyadmin.net/phpMyAdmin/5.1.1/phpMyAdmin-5.1.1-all-languages.zip
+
+-Mover aqui la carpeta de (phpMyAdmin-x.x.x nueva)
+-Copiar de la carpeta antigua el (config.inc.php)
+-Borrar la antigua
+-Cambiar el nombre de la nueva carpeta a phpMyAdmin

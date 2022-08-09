@@ -1,0 +1,27 @@
+//Colores
+$primary:#5694DB;
+$secondary:#f7d559;
+$light:#c1d8f0;
+$white:#fff;
+
+//Temas
+$theme-colors:(
+        "primary": $primary,
+        "secondary": $secondary,
+        "light": $light,
+);
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Montserrat&display=swap');
+$font-family-base: 'Montserrat', sans-serif;
+h1, h2, h3{
+  font-family: 'Libre Franklin';
+}
+
+
+//_navbar.scss
+$navbar-padding-y: .75rem;
+$nav-link-color: $white;
+$nav-link-hover-color: $secondary;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
